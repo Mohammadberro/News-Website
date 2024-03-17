@@ -89,6 +89,14 @@ nav .profile-pic {
     padding-top: 6rem;
 }
 
+nav a{
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: inherit;
+}
+
 .arrow {
     color: #fff;
     font-size: 5rem;
@@ -145,26 +153,33 @@ nav .profile-pic {
     padding-right: 6rem;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 80vw;
-    }
-    .container h2 {
-        font-size: 40px;
-    }
-    .arrow {
-        font-size: 3rem;
-    }
-    .news-card {
-        width: 80vw;
-        height: 30rem;
-    }
-    .news-card h3 {
-        font-size: 30px;
-    }
-    .news-card h4 {
-        font-size: 20px;
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+.container form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.container form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container form button:hover {
+    background-color: #0056b3;
 }
